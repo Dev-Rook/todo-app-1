@@ -197,4 +197,8 @@
 
         font-size: 10px;
     }
+
+    .ToDo-List-Container {
+        justify-content: center;
+    }
 }
