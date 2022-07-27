@@ -7,7 +7,6 @@ import ToDo from './Components/Todo Dashboard/ToDo';
 function App() {
   return (
     <div className="App">
-      <Header />
       <ToDo />
     </div>
   );
