@@ -170,3 +170,31 @@
 }
 
 /* Delete Button End */
+
+
+
+@media only screen and (max-width: 845px) {
+    .ToDo-Container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .ToDo-Input-Container {
+        width: 100%;
+        gap: 0px;
+
+        justify-content: center;
+    }
+
+    .Task-Input {
+        margin-right: 20px;
+    }
+
+    .Add-ToDo-Button {
+        padding: 0 10px;
+        line-height: 50px;
+
+        font-size: 10px;
+    }
+}

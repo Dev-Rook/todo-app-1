@@ -40,7 +40,7 @@ const ToDo = () => {
                 transition={{duration: .2}}
             >
                 <p className="Button-Text">
-                    Add Task
+                    Add
                 </p>
             </motion.button>
         </div>
