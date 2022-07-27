@@ -48,16 +48,21 @@ const ToDo = () => {
         <div className="ToDo-List-Container">
             {todoList.map((task) => {
                 return (
-                    <div className="Task-Container">
+                    <motion.div className="Task-Container"
+                        initial={{x: "-100vh", opacity: 0}}
+                        animate={{x: 0, opacity: 1, type: "spring"}}
+                        exit={{x: "100vh", opacity: 0}}
+                        transition={{duration: .5}}
+                    >
                         <h1 className='The-Task'>{task.taskName}</h1>
 
                         <motion.button onClick={() => deleteTask(task.id)} className="Delete-Task-Button"
-                            whileHover={{scale: 1.1, backgroundColor: "", color: "red"}}
+                            whileHover={{scale: 1.1, color: "red"}}
                             transition={{duration: .2}}
                         >
                             Delete Todo
                         </motion.button>
-                    </div>
+                    </motion.div>
                 );
             })}
         </div>
