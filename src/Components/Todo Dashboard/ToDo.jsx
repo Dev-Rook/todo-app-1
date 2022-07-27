@@ -57,10 +57,12 @@ const ToDo = () => {
                         <h1 className='The-Task'>{task.taskName}</h1>
 
                         <motion.button onClick={() => deleteTask(task.id)} className="Delete-Task-Button"
-                            whileHover={{scale: 1.1, color: "red"}}
+                            whileHover={{scale: 1.1, backgroundColor: "#e34b22", color: "white"}}
                             transition={{duration: .2}}
                         >
-                            Delete Todo
+                            <p className="Button-Text">
+                                Delete
+                            </p>
                         </motion.button>
                     </motion.div>
                 );
