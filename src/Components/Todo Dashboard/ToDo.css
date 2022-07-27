@@ -78,6 +78,7 @@
 }
 
 .Task-Container {
+    border: 1px solid black;
     display: flex;
 
     padding: 5px;
@@ -96,6 +97,7 @@
     font-weight: 400;
 
     margin: auto;
+    text-align: left;
 }
 
 
@@ -113,7 +115,7 @@
     color: #f0f0f0;
     cursor: pointer;
     z-index: 1;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,5 +202,14 @@
 
     .ToDo-List-Container {
         justify-content: center;
+        width: 100%;
     }
+
+    .The-Task {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
 }
