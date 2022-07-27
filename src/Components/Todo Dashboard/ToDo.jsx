@@ -37,6 +37,7 @@ const ToDo = () => {
 
             <motion.button onClick={addTask} className="Add-ToDo-Button"
                 whileHover={{scale: 1.1, backgroundColor: "#35a967", color: "white"}}
+                whileTap={{scale: .9}}
                 transition={{duration: .2}}
             >
                 <p className="Button-Text">
@@ -54,15 +55,24 @@ const ToDo = () => {
                         exit={{x: "100vh", opacity: 0}}
                         transition={{duration: .5}}
                     >
-                        <h1 className='The-Task'>{task.taskName}</h1>
+                        <motion.h1 className='The-Task'
+                            whileHover={{scale: 1.1, color: ""}}
+                            whileTap={{scale: .9}}
+                            transition={{duration: .2}}
+                        >
+                            {task.taskName}
+                        </motion.h1>
 
                         <motion.button onClick={() => deleteTask(task.id)} className="Delete-Task-Button"
                             whileHover={{scale: 1.1, backgroundColor: "#e34b22", color: "white"}}
+                            whileTap={{scale: .9}}
                             transition={{duration: .2}}
                         >
-                            <p className="Button-Text">
+                            <motion.p className="Button-Text"
+
+                            >
                                 Delete
-                            </p>
+                            </motion.p>
                         </motion.button>
                     </motion.div>
                 );
